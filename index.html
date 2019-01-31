@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Priya's website</title>
+		<title>{{ page.title }}</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
@@ -15,6 +15,11 @@
     		</ul>
 		</nav>
 		<div class="container">
+		{{ content }}
+		---
+		layout: default
+		title:Priya's website
+		---
     		<div class="blurb">
         		<h1>Hi there, I'm Priya GPSP</h1>
 				<p>This is my <em>Personal</em> website. <a href="/about">Read more about my life...</a></p>
